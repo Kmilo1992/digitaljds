@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Contenido del header */
+
+header {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding: 50px 0;
+    margin-bottom: 40px;   
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 0;
+}
+
+header .logo img {
+    width: 30px;
+
+}
+
+header .logo .jds {
+    display: flex;
+    width: 60px;
+}
+
+header .checkbox, header .icons {
+    display: none;
+}
+
+header .nav__list {
+    display: flex;
+    gap: 30px;
+    padding: 0 30px;
+}
+
+header .nav__list a {
+    color: #242E52;
+}
+
+header .nav__list a:hover {
+    color: rgba(36, 46, 82, 0.60);
+}
+
+header .btn-contact {
+    background-color: #61ce70;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+header .btn-contact:hover {
+    background: rgba(54, 199, 61, 0.7);
+}
+
+/* Contenido del main */
+
+    /* Preview section */
+
+.preview {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.preview .container.one {
+    width: 50%;
+    object-fit: cover;
+}
+
+.preview .container.one img {
+    width: 100%;
+}
+
+.preview .container.two {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    min-height: 310px;
+    min-width: 310px;
+    margin: 20px;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.preview .two .first {
+    background-color: white;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first.a {
+    background-color: #fb4624
+}
+
+
+.preview .two .first .a:hover {
+    background-color: gray
+}
+
+.preview .two h2{
+    font-size: 1.8em;
+}
+
+.preview .two p{
+    font-size: 0.8em;
+    padding-bottom: 20px;
+}
+
+.preview .btn-contact {
+    background-color: #61ce70;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.preview .btn-contact:hover {
+    background-color: rgba(20, 83, 15, 0.801);
+}
+
+/* Pros section */
+
+.pros {
+    padding-top: 40px;
+}
+
+.pros .bar {
+    background-color: #61ce70;
+    display: flex;
+    gap: 100px;
+    padding: 0px 10%;
+}
+
+.pros .bar .title, .pros .bar .text {
+    color: white;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+.pros .bar .title {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.pros .pros__boxes {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.pros .pros__boxes .pros__box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    max-width: 530px;
+    min-width: 450px;
+    padding: 10px;
+}
+
+.pros .pros__boxes .pros__box .top {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.pros .pros__boxes .pros__box .number{
+    background-color: #61ce70;
+    color: white;
+    display: flex;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 0.8em;
+}
+
+.pros .pros__boxes .pros__box .title{
+    padding: 15px;
+    font-size: 0.8em;
+}
+
+.pros .pros__boxes .pros__box .text{
+    padding: 10px;
+    padding-left: 80px;
+    color: #B3B2B7;
+}
+
+/* Best section */
+
+.best__month {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.best__month .title {
+    padding: 80px;
+}
+
+.best__month .players {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.best__month .player {
+    background-color: #FAFAFA;
+    position: relative;
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.best__month .player img {
+    background-color: #B9B9C1;
+    position: absolute;
+    top: -35px;
+    left: calc(50% - 35px);
+    border-radius: 50%;
+}
+
+.best__month .player .name {
+    color: #3F4868;
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+
+.best__month .player .text {
+    color: #B9B9C1;
+    text-align: center;
+    padding: 0 15px 15px;
+}
+
+.best__month .more a {
+    background-color: #61ce70;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.best__month .more a:hover {
+    background-color: rgba(139, 72, 191, 0.70);
+
+}
+
+/* Best Team section */
+
+.best__teams {
+    background-color: #61ce70;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 150px;
+}
+
+.best__teams .title {
+    color: white;
+    font-size: 1.3em;
+    width: 50%;
+}
+
+.best__teams .btn__got {
+    color: #61ce70;
+    border-radius: 50px;
+    background-color: white;
+    padding: 10px 30px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Contenido del footer */
+
+footer {
+    background-color: #1E1E26;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    max-height: 250px;
+}
+
+footer .social {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 2em;
+    width: 80%;
+    min-width: 169px;
+    gap: 30px;
+}
+
+footer .social .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 15px;
+    font-size: 1.6em;
+}
+
+footer .social .logo img {
+    width: 50px;
+}
+
+footer .copyright {
+    position: absolute;
+    color: #8C8C94;
+    font-size: 0.8em;
+    right: 80px;
+    bottom: 30px;
+}
+
+/* Responsive*/
+
+@media (max-width: 980px) {
+
+    footer {
+        padding: 40px;
+    }
+    
+    footer .social {
+        padding-left: 0px;
+    }
+
+    footer .menu .link {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 860px) {
+    header .btn-contact {
+        display: none;
+    }
+
+    footer .menu .link {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 720px) {
+    /* Menu hamburguesa */
+
+    header {
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    header .nav__list {
+        display: none;
+        background-color: #232C50;
+        flex-direction: column;
+        position: absolute;
+        min-width: 200px;
+        display: flex;
+        padding: 0px;
+        width: 60%;
+        top: 150px;
+        right: 400px;
+        gap: 0;
+        opacity: 0;
+        transition: 1000ms;
+        overflow: hidden;
+        border-radius: 40px 0 0 40px;
+    }
+    
+    header .nav__list a {
+        display: flex;
+        padding: 10px 20px;
+        color: white;
+        font-size: 1.5em;
+        background-color: #208647;
+        display: flex;
+        justify-content: center;
+    }
+    
+    header .nav__list a:hover {
+        background-color: rgba(19, 190, 10, 0.815);
+        color: white;
+    }
+
+    header .checkbox, header .icons {
+        display: block;
+        position: absolute;
+        right: 15%;
+        top: 40px;
+        font-size: 80px;
+        cursor: pointer;
+        width: 80px;
+        height: 80px;
+    }
+
+    header .bx-x {
+        display: none;
+    }
+
+    header .icons {
+        pointer-events: none;
+    }
+
+    .checkbox {
+        opacity: 0;
+    }
+
+    .checkbox:checked ~ .bx-menu {
+        display: none;
+    }
+
+    .checkbox:checked ~ .bx-x {
+        display: block;
+    }
+
+    .checkbox:checked ~ .nav__list {
+        opacity: 1;
+        right: 0;
+        box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Preview section */
+    .preview {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .preview .container.one {
+        width: 100%;
+    }
+
+    .preview .container img{
+        height: 100%;
+    }
+
+    .preview .container.two {
+        width: 100%;
+    }
+
+    .pros .bar {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .pros .bar .title, .pros .bar .text {
+        width: 100%;
+    }
+
+    .best__teams {
+        flex-direction: column;
+        padding: 30px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .best__teams .title {
+        width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        max-height: none;
+        gap: 40px;
+    }
+
+    footer .subscribe, footer .menu,
+    footer .social, footer .cont__copy {
+        width: 100%;
+        align-items: center;
+    }
+
+    footer .social {
+        flex-direction: column-reverse;
+    }
+
+    footer .social .social__links {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    footer .menu {
+        width: 80%;
+    }
+
+    footer .menu .link a{
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    footer .subscribe .form {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .cont__copy {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .copyright {
+        position: relative;
+        right: auto;
+        bottom: auto;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .pros .bar {
+        background-color: #16802d;
+    }
+
+    .pros .pros__boxes {
+        background-color: white;
+        flex-direction: column;
+        align-items: end;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+
+    .pros .pros__boxes .pros__box {
+        width: 100%;
+        max-width: none;
+        min-width: 100px;
+        padding-right: 0;
+    }
+
+    .pros .pros__boxes .pros__box .top {
+        width: 100%;
+        border-radius: 50px 0px 0px 50px;
+        background: rgba(93, 196, 80, 0.3);
+        margin-left: 10px;
+    }
+
+    .pros .pros__boxes .pros__box .text{
+        padding: 10px;
+        color: #B3B2B7;
+    }
+
+    .best__month .players .one, .best__month .players .three {
+        display: none;
+    }
+
+    .best__teams {
+        background-color: #097a18;
+    }
+    
+    .best__teams .btn__got {
+        color: white;
+        background-color: #232C50;
+        padding: 10px 50px;
+    }
+}
