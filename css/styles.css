@@ -29,13 +29,13 @@ header .logo {
 }
 
 header .logo img {
-    width: 30px;
+    width: 60px;
 
 }
 
 header .logo .jds {
     display: flex;
-    width: 60px;
+    width: 100px;
 }
 
 header .checkbox, header .icons {
@@ -74,6 +74,7 @@ header .btn-contact:hover {
 
 .preview {
     width: 80%;
+    max-width: 900px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -83,6 +84,8 @@ header .btn-contact:hover {
 .preview .container.one {
     display: flex;
     width: 50%;
+    min-height: 330px;
+    min-width: 330px;
 }
 
 .preview .container.one img {
@@ -94,19 +97,30 @@ header .btn-contact:hover {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    min-height: 310px;
-    min-width: 310px;
+    min-height: 300px;
+    min-width: 300px;
     margin: 20px;
-    justify-content: space-between;
-    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    box-shadow: 0px 0px 10px 0px #333 inset;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.preview .titulo {
+    width: 100%;
+    text-align: center;
 }
 
 .preview .container.two .first {
     color: white;
     font-weight: bold;
     font-size: 2em;
-    width: 28%;
-    height: 28%;
+    width: 25%;
+    height: 25%;
+    min-height: 80px;
+    min-width: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +162,7 @@ header .btn-contact:hover {
     background-color: #6dbadd;
 }
 
-.preview .two .first.a:hover,
+/* .preview .two .first.a:hover,
 .preview .two .first.b:hover,
 .preview .two .first.c:hover,
 .preview .two .first.d:hover,
@@ -160,6 +174,46 @@ header .btn-contact:hover {
     background-color: #1E1E26;
     font-size: 4em;
     
+} */
+
+.hover {
+    --c: #61ce70; /* the color */
+    --b: .01em;    /* border length*/
+    --d: 10px;    /* the cube depth */
+    
+    --_s: calc(var(--d) + var(--b));
+    
+    color: var(--c);
+    border: solid #0000;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    background:
+        conic-gradient(at left var(--d)  bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+        conic-gradient(at left var(--_s) bottom var(--_s),
+        #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(calc(var(--d)/-1),var(--d));
+    clip-path: 
+        polygon(
+        var(--d) 0%, 
+        var(--d) 0%, 
+        100% 0%, 
+        100% calc(100% - var(--d)),
+        100% calc(100% - var(--d)),
+        var(--d) calc(100% - var(--d))
+    );
+    transition: 0.5s;
+}
+.hover:hover {
+        transform: translate(0,0);
+        clip-path: 
+        polygon(
+        0% var(--d), 
+        var(--d) 0%, 
+        100% 0%, 
+        100% calc(100% - var(--d)), 
+        calc(100% - var(--d)) 100%, 
+        0% 100%
+    );
 }
 
 .preview .two h2{
@@ -184,33 +238,39 @@ header .btn-contact:hover {
 
 /* Pros section */
 
-.pros {
+.indicadores {
     padding-top: 40px;
 }
 
-.pros .bar {
-    background-color: #61ce70;
+.indicadores .bar {
+    background-color: #16802d;
     display: flex;
-    gap: 100px;
+    gap: 20px;
     padding: 0px 10%;
 }
 
-.pros .bar .title, .pros .bar .text {
+.indicadores .bar .title {
     color: white;
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     padding: 30px 0;
-    font-size: 0.8em;
     font-weight: 200;
-}
-
-.pros .bar .title {
     font-size: 2em;
     font-weight: 400;
 }
 
-.pros .pros__boxes {
+.indicadores .bar .text {
+    color: white;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.actividades .actividades__boxes {
     background-color: #FAFAFA;
     display: flex;
     flex-wrap: wrap;
@@ -218,7 +278,7 @@ header .btn-contact:hover {
     padding: 30px;
 }
 
-.pros .pros__boxes .pros__box {
+.actividades .actividades__boxes .actividades__box {
     display: flex;
     flex-wrap: wrap;
     width: 40%;
@@ -227,12 +287,12 @@ header .btn-contact:hover {
     padding: 10px;
 }
 
-.pros .pros__boxes .pros__box .top {
+.actividades .actividades__boxes .actividades__box .top {
     display: flex;
     flex-wrap: nowrap;
 }
 
-.pros .pros__boxes .pros__box .number{
+.actividades .actividades__boxes .actividades__box .number{
     background-color: #61ce70;
     color: white;
     display: flex;
@@ -243,12 +303,12 @@ header .btn-contact:hover {
     font-size: 0.8em;
 }
 
-.pros .pros__boxes .pros__box .title{
+.actividades .actividades__boxes .actividades__box .title{
     padding: 15px;
     font-size: 0.8em;
 }
 
-.pros .pros__boxes .pros__box .text{
+.actividades .actividades__boxes .actividades__box .text{
     padding: 10px;
     padding-left: 80px;
     color: #B3B2B7;
@@ -503,12 +563,12 @@ footer .copyright {
         width: 100%;
     }
 
-    .pros .bar {
+    .indicadores .bar {
         flex-direction: column;
         gap: 0px;
     }
 
-    .pros .bar .title, .pros .bar .text {
+    .indicadores .bar .title, .indicadores .bar .text {
         width: 100%;
     }
 
@@ -577,11 +637,11 @@ footer .copyright {
 
 @media (max-width: 530px) {
 
-    .pros .bar {
+    .indicadores .bar {
         background-color: #16802d;
     }
 
-    .pros .pros__boxes {
+    .indicadores .indicadores__boxes {
         background-color: white;
         flex-direction: column;
         align-items: end;
@@ -589,21 +649,21 @@ footer .copyright {
         padding-right: 0px;
     }
 
-    .pros .pros__boxes .pros__box {
+    .indicadores .indicadores__boxes .indicadores__box {
         width: 100%;
         max-width: none;
         min-width: 100px;
         padding-right: 0;
     }
 
-    .pros .pros__boxes .pros__box .top {
+    .indicadores .indicadores__boxes .indicadores__box .top {
         width: 100%;
         border-radius: 50px 0px 0px 50px;
         background: rgba(93, 196, 80, 0.3);
         margin-left: 10px;
     }
 
-    .pros .pros__boxes .pros__box .text{
+    .indicadores .indicadores__boxes .indicadores__box .text{
         padding: 10px;
         color: #B3B2B7;
     }
