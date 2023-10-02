@@ -82,7 +82,6 @@ header .btn-contact:hover {
 
 .preview .container.one {
     display: flex;
-    background-color: #1E1E26;
     width: 50%;
 }
 
@@ -92,7 +91,6 @@ header .btn-contact:hover {
 }
 
 .preview .container.two {
-    background-color: #097a18;
     display: flex;
     flex-wrap: wrap;
     width: 50%;
@@ -115,43 +113,53 @@ header .btn-contact:hover {
 }
 
 .preview .container.two .first.a {
-    background-color: #fb4624
+    background-color: #fb4624;
 }
 
 .preview .container.two .first.b {
-    background-color: #ff7b39
+    background-color: #ff7b39;
 }
 
 .preview .container.two .first.c {
-    background-color: #fd9b3a
+    background-color: #fd9b3a;
 }
 
 .preview .container.two .first.d {
-    background-color: #20b45b
+    background-color: #20b45b;
 }
 
 .preview .container.two .first.uno {
-    background-color: #91ca06
+    background-color: #91ca06;
 }
 
 .preview .container.two .first.dos {
-    background-color: #d6d230
+    background-color: #d6d230;
 }
 
 .preview .container.two .first.tres {
-    background-color: #0066b6
+    background-color: #0066b6;
 }
 
 .preview .container.two .first.cuatro {
-    background-color: #429acc
+    background-color: #429acc;
 }
 
 .preview .container.two .first.cinco {
-    background-color: #6dbadd
+    background-color: #6dbadd;
 }
 
-.preview .two .first:hover {
-    background-color: gray
+.preview .two .first.a:hover,
+.preview .two .first.b:hover,
+.preview .two .first.c:hover,
+.preview .two .first.d:hover,
+.preview .two .first.uno:hover,
+.preview .two .first.dos:hover,
+.preview .two .first.tres:hover,
+.preview .two .first.cuatro:hover,
+.preview .two .first.cinco:hover {
+    background-color: #1E1E26;
+    font-size: 4em;
+    
 }
 
 .preview .two h2{
