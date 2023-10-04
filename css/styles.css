@@ -301,6 +301,7 @@ header .btn-contact:hover {
     align-items: center;
     border-radius: 30px;
     font-size: 0.8em;
+    height: 46px;
 }
 
 .actividades .actividades__boxes .actividades__box .title{
@@ -312,6 +313,16 @@ header .btn-contact:hover {
     padding: 10px;
     padding-left: 80px;
     color: #B3B2B7;
+}
+
+.actividades .img-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.actividades .img-cont .sample{
+    width: 320px;
 }
 
 /* Best section */
@@ -637,11 +648,7 @@ footer .copyright {
 
 @media (max-width: 530px) {
 
-    .indicadores .bar {
-        background-color: #16802d;
-    }
-
-    .indicadores .indicadores__boxes {
+    .actividades .actividades__boxes {
         background-color: white;
         flex-direction: column;
         align-items: end;
@@ -649,21 +656,21 @@ footer .copyright {
         padding-right: 0px;
     }
 
-    .indicadores .indicadores__boxes .indicadores__box {
+    .actividades .actividades__boxes .actividades__box {
         width: 100%;
         max-width: none;
         min-width: 100px;
         padding-right: 0;
     }
 
-    .indicadores .indicadores__boxes .indicadores__box .top {
+    .actividades .actividades__boxes .actividades__box .top {
         width: 100%;
         border-radius: 50px 0px 0px 50px;
         background: rgba(93, 196, 80, 0.3);
         margin-left: 10px;
     }
 
-    .indicadores .indicadores__boxes .indicadores__box .text{
+    .actividades .actividades__boxes .actividades__box .text{
         padding: 10px;
         color: #B3B2B7;
     }
