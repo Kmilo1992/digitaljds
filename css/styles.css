@@ -13,12 +13,19 @@
 
 header {
     margin: auto;
+    background-color: rgb(109, 167, 112);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    padding: 50px 0;
-    margin-bottom: 40px;   
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 5px 0 0 rgb(41, 117, 5), 
+                0 10px 0 0 rgba(65,117,5,0.6), 
+                0 15px 0 0 rgba(65,117,5,0.4), 
+                0 20px 0 0 rgba(65,117,5,0.2), 
+                0 25px 0 0 rgba(65,117,5,0.1);
 }
 
 header .logo {
@@ -50,10 +57,12 @@ header .nav__list {
 
 header .nav__list a {
     color: #242E52;
+    font-size: 1.2em;
 }
 
 header .nav__list a:hover {
-    color: rgba(36, 46, 82, 0.60);
+    font-weight: 500;
+    color: white;
 }
 
 header .btn-contact {
@@ -76,6 +85,7 @@ header .btn-contact:hover {
     width: 80%;
     max-width: 900px;
     margin: auto;
+    padding-top: 160px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -94,6 +104,7 @@ header .btn-contact:hover {
 }
 
 .preview .container.two {
+    background-color: #333;
     display: flex;
     flex-wrap: wrap;
     width: 50%;
@@ -111,6 +122,7 @@ header .btn-contact:hover {
 .preview .titulo {
     width: 100%;
     text-align: center;
+    color: white;
 }
 
 .preview .container.two .first {
@@ -177,9 +189,9 @@ header .btn-contact:hover {
 } */
 
 .hover {
-    --c: #61ce70; /* the color */
-    --b: .01em;    /* border length*/
-    --d: 10px;    /* the cube depth */
+    --c: #61ce70a6; /* the color */
+    --b: .00em;    /* border length*/
+    --d: 5px;    /* the cube depth */
     
     --_s: calc(var(--d) + var(--b));
     
@@ -270,21 +282,29 @@ header .btn-contact:hover {
     font-weight: 200;
 }
 
-.actividades .actividades__boxes {
+.actividades {
+    display: flex;
+    justify-content: center;
     background-color: #FAFAFA;
+}
+
+.actividades .actividades__boxes {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 30px;
+    max-width: 1200px;
 }
 
 .actividades .actividades__boxes .actividades__box {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     width: 40%;
     max-width: 530px;
     min-width: 450px;
     padding: 10px;
+    align-items: start;
 }
 
 .actividades .actividades__boxes .actividades__box .top {
@@ -481,8 +501,7 @@ footer .copyright {
     /* Menu hamburguesa */
 
     header {
-        justify-content: space-between;
-        width: 70%;
+        align-items: center;
     }
 
     header .nav__list {
@@ -522,7 +541,7 @@ footer .copyright {
         display: block;
         position: absolute;
         right: 15%;
-        top: 40px;
+        top: 25px;
         font-size: 80px;
         cursor: pointer;
         width: 80px;
