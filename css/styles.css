@@ -5,7 +5,7 @@
     padding: 0px;
     margin: 0px;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
@@ -13,7 +13,7 @@
 
 header {
     margin: auto;
-    background-color: rgb(109, 167, 112);
+    background-color: rgb(51,101,53);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -36,7 +36,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 40px;
+    width: 300px;
 
 }
 
@@ -78,6 +78,23 @@ header .btn-contact:hover {
 }
 
 /* Contenido del main */
+
+    /* Gallery section */
+
+.gallery {
+    padding-top: 150px;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+.carousel-inner > .item > video {
+    height: 60%;
+    width: 100%;
+    margin: auto;
+}
 
     /* Preview section */
 

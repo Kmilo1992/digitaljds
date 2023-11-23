@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://static.wixstatic.com/media/f661ea_8e8d799e9aec44dc96852f630526f06b%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/f661ea_8e8d799e9aec44dc96852f630526f06b%7Emv2.png">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" href="./img/logo.png">
     <title>Colegio Jordán de Sajonia</title>
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <img src="./img/logo.png" alt="">
-            <img class="jds" src="./img/jds.png" alt="">
+            <!-- <img src="./img/logo.png" alt="">
+            <img class="jds" src="./img/jds.png" alt=""> -->
+            <a href="https://www.jordandesajonia.edu.co/"><img src="./img/logoJDS.png" alt="Logo JDS"></a>
         </div>
         <nav class="nav">
             <input type="checkbox" class="checkbox">
@@ -28,6 +33,61 @@
         <!-- <div><a href="#" class="btn-contact">Contact</a></div> -->
     </header>
     <main>
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <br>
+                <div id="theCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicadores -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#theCarousel" data-slide-to="1"></li>
+                        <li data-target="#theCarousel" data-slide-to="2"></li>
+                        <li data-target="#theCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <!-- <video src="./img/scienceday.mp4" autoplay loop></video> -->
+                            <video controls autoplay loop muted class="myvid" id="player">
+                                <source src="./img/scienceday.mp4" type="video/mp4">
+                                </video>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Science Day</h3>
+                                <p>Exhibition</p>
+                            </div>
+                        </div>
+                        <div class="item" width="600" height="424">
+                            <img src="./img/sd1.jpeg" alt="fotografia"> 
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Xataka Fotografía</h3>
+                                <p>Concurso</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/sd2.jpeg" alt="pintura" width="600" height="424">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>DoArt Pintura</h3>
+                                <p>Curso</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/sd3.jpeg" alt="diseno" width="600" height="424"> 
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>UX UI Diseño Gráfico</h3>
+                                <p>Curso</p>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">anterior</span>
+                        </a>
+                        <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">siguiente</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="preview" id="preview">
             <article class="container one"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeJZwWiy7a969mPCzUJZf6FxFkkCcszw9Jcnf7i5K_TKjUYAg/viewform" target="_blank"><img src="./img/jdsschool.jpeg" alt=""></a></article>
             <article class="container two">
