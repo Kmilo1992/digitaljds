@@ -56,13 +56,13 @@ header .nav__list {
 }
 
 header .nav__list a {
-    color: #242E52;
+    color: #ffffff;
     font-size: 1.2em;
 }
 
 header .nav__list a:hover {
     font-weight: 500;
-    color: white;
+    color: #F2BC28;
 }
 
 header .btn-contact {
@@ -327,6 +327,7 @@ header .btn-contact:hover {
 .actividades .actividades__boxes .actividades__box .top {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 .actividades .actividades__boxes .actividades__box .number{
@@ -337,18 +338,20 @@ header .btn-contact:hover {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    font-size: 0.8em;
-    height: 46px;
+    font-size: 1.3em;
+    margin: auto 0;
 }
 
 .actividades .actividades__boxes .actividades__box .title{
     padding: 15px;
-    font-size: 0.8em;
+    font-size: 1.5em;
+    color: #097a18;
+    text-shadow: 1px 2px 2px white ;
 }
 
 .actividades .actividades__boxes .actividades__box .text{
     padding: 10px;
-    padding-left: 80px;
+    padding-left: 30px;
     color: #B3B2B7;
 }
 
@@ -700,10 +703,19 @@ footer .copyright {
     }
 
     .actividades .actividades__boxes .actividades__box .top {
-        width: 100%;
         border-radius: 50px 0px 0px 50px;
         background: rgba(93, 196, 80, 0.3);
         margin-left: 10px;
+    }
+
+    .actividades .actividades__boxes .actividades__box .top .number{
+        color: whitesmoke;
+        margin-left: 15px;
+    }
+
+    .actividades .actividades__boxes .actividades__box .top .title{
+        color: #097a18;
+        text-shadow: 1px 2px 2px white ;
     }
 
     .actividades .actividades__boxes .actividades__box .text{
