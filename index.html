@@ -98,15 +98,28 @@
                     <!-- <p>En este espacion encontraras informacion sobre la clase de Digital Learning para grado primero</p> -->
                     <!-- <div><a href="#" class="btn-contact">Contact</a></div> -->
                 </div>
-                <a href="https://www.tinkercad.com/joinclass/5VHDP2YG5" class="first a hover" target="_blank">1.A</a>
-                <a href="https://www.tinkercad.com/joinclass/GM72AR2IY" class="first b hover" target="_blank">1.B</a>
-                <a href="https://www.tinkercad.com/joinclass/DSNWZ3SBE" class="first c hover" target="_blank">1.C</a>
-                <a href="https://www.tinkercad.com/joinclass/UFD4KFWPC" class="first d hover" target="_blank">1.D</a>
-                <a href="https://www.tinkercad.com/joinclass/ZFIDEK4PA" class="first uno hover" target="_blank">1.1</a>
-                <a href="https://www.tinkercad.com/joinclass/TKZ4TS1J8" class="first dos hover" target="_blank">1.2</a>
-                <a href="https://www.tinkercad.com/joinclass/ZYQBT2WAT" class="first tres hover" target="_blank">1.3</a>
-                <a href="https://www.tinkercad.com/joinclass/W7BNFK5YV" class="first cuatro hover" target="_blank">1.4</a>
-                <a href="https://www.tinkercad.com/joinclass/PCWCBTQDM" class="first cinco hover" target="_blank">1.5</a>
+                <div class="tinkercad">
+                    <a href="https://www.tinkercad.com/joinclass/5VHDP2YG5" class="first a hover" target="_blank">1.A</a>
+                    <a href="https://www.tinkercad.com/joinclass/GM72AR2IY" class="first b hover" target="_blank">1.B</a>
+                    <a href="https://www.tinkercad.com/joinclass/DSNWZ3SBE" class="first c hover" target="_blank">1.C</a>
+                    <a href="https://www.tinkercad.com/joinclass/UFD4KFWPC" class="first d hover" target="_blank">1.D</a>
+                    <a href="https://www.tinkercad.com/joinclass/ZFIDEK4PA" class="first uno hover" target="_blank">1.1</a>
+                    <a href="https://www.tinkercad.com/joinclass/TKZ4TS1J8" class="first dos hover" target="_blank">1.2</a>
+                    <a href="https://www.tinkercad.com/joinclass/ZYQBT2WAT" class="first tres hover" target="_blank">1.3</a>
+                    <a href="https://www.tinkercad.com/joinclass/W7BNFK5YV" class="first cuatro hover" target="_blank">1.4</a>
+                    <a href="https://www.tinkercad.com/joinclass/PCWCBTQDM" class="first cinco hover" target="_blank">1.5</a>
+
+
+                    <!-- <a href="https://www.tinkercad.com/joinclass/5VHDP2YG5" class="first a hover" target="_blank">1.A</a>
+                    <a href="https://www.tinkercad.com/joinclass/GM72AR2IY" class="first b hover" target="_blank">1.B</a>
+                    <a href="https://www.tinkercad.com/joinclass/DSNWZ3SBE" class="first c hover" target="_blank">1.C</a>
+                    <a href="https://www.tinkercad.com/joinclass/UFD4KFWPC" class="first d hover" target="_blank">1.D</a>
+                    <a href="https://www.tinkercad.com/joinclass/ZFIDEK4PA" class="first uno hover" target="_blank">1.1</a>
+                    <a href="https://www.tinkercad.com/joinclass/TKZ4TS1J8" class="first dos hover" target="_blank">1.2</a>
+                    <a href="https://www.tinkercad.com/joinclass/ZYQBT2WAT" class="first tres hover" target="_blank">1.3</a>
+                    <a href="https://www.tinkercad.com/joinclass/W7BNFK5YV" class="first cuatro hover" target="_blank">1.4</a>
+                    <a href="https://www.tinkercad.com/joinclass/PCWCBTQDM" class="first cinco hover" target="_blank">1.5</a> -->
+                </div>    
             </article>
         </section>
         <section class="indicadores" id="indicadores">
@@ -222,38 +235,38 @@
                         <span class="dot" onclick="currentSlide(7)"></span>
                         <span class="dot" onclick="currentSlide(8)"></span>
                     </div>
+                    <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        // Next/previous controls
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        // Thumbnail image controls
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) {slideIndex = 1}
+                            if (n < 1) {slideIndex = slides.length}
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].classList.remove("slideractive");
+                            }
+                            slides[slideIndex-1].style.display = "block";
+                            dots[slideIndex-1].classList.add("slideractive");
+                        }
+
+                    </script>
                 </div>
-                <script>
-                    let slideIndex = 1;
-                    showSlides(slideIndex);
-
-                    // Next/previous controls
-                    function plusSlides(n) {
-                        showSlides(slideIndex += n);
-                    }
-
-                    // Thumbnail image controls
-                    function currentSlide(n) {
-                        showSlides(slideIndex = n);
-                    }
-
-                    function showSlides(n) {
-                        let i;
-                        let slides = document.getElementsByClassName("mySlides");
-                        let dots = document.getElementsByClassName("dot");
-                        if (n > slides.length) {slideIndex = 1}
-                        if (n < 1) {slideIndex = slides.length}
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].classList.remove("slideractive");
-                        }
-                        slides[slideIndex-1].style.display = "block";
-                        dots[slideIndex-1].classList.add("slideractive");
-                    }
-
-                </script>
             </article>
         </section>
         <!-- <section class="best__month">
