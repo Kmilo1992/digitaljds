@@ -87,14 +87,17 @@ header .btn-contact:hover {
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 70%;
+    width: 100%;
+    max-height: 500px;
     margin: auto;
+    object-fit: cover;
 }
 
 .carousel-inner > .item > video {
-    height: 60%;
+    max-height: 500px;
     width: 100%;
     margin: auto;
+    object-fit: cover;
 }
 
     /* Preview section */

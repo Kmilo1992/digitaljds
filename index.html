@@ -26,10 +26,10 @@
             <i class='icons bx bx-menu'></i>
             <i class='icons bx bx-x'></i>
             <ul class="nav__list">
-                <li><a href="#preview">Inicio</a></li>
+                <li><a href="#">Inicio</a></li>
                 <li><a href="#indicadores">Indicadores</a></li>
                 <li><a href="#actividades">Actividades</a></li>
-                <li><a href="#">Tinkercad</a></li>
+                <li><a href="#preview">Tinkercad</a></li>
             </ul>
         </nav>
         <!-- <div><a href="#" class="btn-contact">Contact</a></div> -->
@@ -48,7 +48,6 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <!-- <video src="./img/scienceday.mp4" autoplay loop></video> -->
                             <video autoplay loop muted class="myvid" id="player">
                                 <source src="./img/scienceday.mp4" type="video/mp4">
                                 </video>
@@ -108,17 +107,6 @@
                     <a href="https://www.tinkercad.com/joinclass/ZYQBT2WAT" class="first tres hover" target="_blank">1.3</a>
                     <a href="https://www.tinkercad.com/joinclass/W7BNFK5YV" class="first cuatro hover" target="_blank">1.4</a>
                     <a href="https://www.tinkercad.com/joinclass/PCWCBTQDM" class="first cinco hover" target="_blank">1.5</a>
-
-
-                    <!-- <a href="https://www.tinkercad.com/joinclass/5VHDP2YG5" class="first a hover" target="_blank">1.A</a>
-                    <a href="https://www.tinkercad.com/joinclass/GM72AR2IY" class="first b hover" target="_blank">1.B</a>
-                    <a href="https://www.tinkercad.com/joinclass/DSNWZ3SBE" class="first c hover" target="_blank">1.C</a>
-                    <a href="https://www.tinkercad.com/joinclass/UFD4KFWPC" class="first d hover" target="_blank">1.D</a>
-                    <a href="https://www.tinkercad.com/joinclass/ZFIDEK4PA" class="first uno hover" target="_blank">1.1</a>
-                    <a href="https://www.tinkercad.com/joinclass/TKZ4TS1J8" class="first dos hover" target="_blank">1.2</a>
-                    <a href="https://www.tinkercad.com/joinclass/ZYQBT2WAT" class="first tres hover" target="_blank">1.3</a>
-                    <a href="https://www.tinkercad.com/joinclass/W7BNFK5YV" class="first cuatro hover" target="_blank">1.4</a>
-                    <a href="https://www.tinkercad.com/joinclass/PCWCBTQDM" class="first cinco hover" target="_blank">1.5</a> -->
                 </div>    
             </article>
         </section>
@@ -164,23 +152,13 @@
                         <p class="number">Ciclo 4</p>
                         <h4 class="title">Elevator Project</h4>
                     </div>
-                    <p class="text">- Los niños deben decorar el rollo de carton que se utilizara en el elevador.<br> - Los niños se familiarizan con los materiales para la elaboración del elevador usando los siguientes materiales:<br> 
-                        <!-- <br>
-                        &emsp;&emsp; 1. Tubo de carton <br>
-                        &emsp;&emsp; 2. Carton base (18cm x 13cm) <br>
-                        &emsp;&emsp; 3. Carton piso (7cm x 7cm)<br>
-                        &emsp;&emsp; 4. Carton, 2 Columnas (8cm x 2cm)<br>
-                        &emsp;&emsp; 5. Carton, circulo (4cm diametro )<br>
-                        &emsp;&emsp; 6. Manguera conectora (15 cm : 20cm) <br>
-                        &emsp;&emsp; 7. Jeringas sin aguja (10mL) <br>
-                        &emsp;&emsp; 8. Silicona <br> -->
-                    </p>
+                    <p class="text">- Los niños deben decorar el rollo de carton que se utilizara en el elevador.<br> - Los niños se familiarizan con los materiales para la elaboración del elevador:<br></p>
 
                     <div class="slideshow-container">
 
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
-                            <div class="numbertext" style="display: block;">1 / 8</div>
+                            <div class="numbertext" >1 / 8</div>
                             <img src="./img/pipe.jpeg" style="width:100%">
                             <div class="textslide">1. Tubo de carton</div>
                         </div>
@@ -197,7 +175,7 @@
                         <div class="mySlides fade">
                             <div class="numbertext">4 / 8</div>
                             <img src="./img/columns.jpeg" style="width:100%">
-                            <div class="textslide">4. Carton, 2 Columnas (8cm x 2cm)</div>
+                            <div class="textslide">4. Carton x2 (8cm x 2cm)</div>
                         </div>
                         <div class="mySlides fade">
                             <div class="numbertext">5 / 8</div>
@@ -207,12 +185,12 @@
                         <div class="mySlides fade">
                             <div class="numbertext">6 / 8</div>
                             <img src="./img/tube.jpeg" style="width:100%">
-                            <div class="textslide">6. Manguera conectora (15 cm : 20cm)e</div>
+                            <div class="textslide">6. Manguera (15 cm : 20cm)</div>
                         </div>
                         <div class="mySlides fade">
                             <div class="numbertext">7 / 8</div>
                             <img src="./img/jeringas.jpeg" style="width:100%">
-                            <div class="textslide">7. 2 Jeringas sin aguja (10mL)</div>
+                            <div class="textslide">7. Jeringas x2 sin aguja (10mL)</div>
                         </div>
                         <div class="mySlides fade">
                             <div class="numbertext">8 / 8</div>
@@ -259,7 +237,7 @@
                                 slides[i].style.display = "none";
                             }
                             for (i = 0; i < dots.length; i++) {
-                                dots[i].classList.remove("slideractive");
+                                dots[i].className = dots[i].className.replace(" active", "");
                             }
                             slides[slideIndex-1].style.display = "block";
                             dots[slideIndex-1].classList.add("slideractive");
