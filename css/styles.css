@@ -704,6 +704,10 @@ footer .copyright {
         width: 180px;
     }
 
+    .preview .container.two .tinkercad .first {
+        max-height: 100px;
+    }
+
     .actividades .actividades__boxes {
         background-color: white;
         flex-direction: column;
