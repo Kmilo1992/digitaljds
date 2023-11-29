@@ -685,7 +685,7 @@ footer .copyright {
     }
 
     .preview .container.two .tinkercad .first {
-        max-height: 100px;
+        height: auto;
     }
 
     .actividades .actividades__boxes {
