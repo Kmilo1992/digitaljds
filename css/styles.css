@@ -106,10 +106,9 @@ header .btn-contact:hover {
     width: 80%;
     max-width: 900px;
     margin: auto;
-    padding-top: 160px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 .preview .container.one {
@@ -154,19 +153,6 @@ header .btn-contact:hover {
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
 }
-
-/* .preview .container.two .first {
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-    width: 25%;
-    height: 25%;
-    min-height: 80px;
-    min-width: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 .preview .container.two .first {
     display: flex;
@@ -214,20 +200,6 @@ header .btn-contact:hover {
 .preview .container.two .first.cinco {
     background-color: #6dbadd;
 }
-
-/* .preview .two .first.a:hover,
-.preview .two .first.b:hover,
-.preview .two .first.c:hover,
-.preview .two .first.d:hover,
-.preview .two .first.uno:hover,
-.preview .two .first.dos:hover,
-.preview .two .first.tres:hover,
-.preview .two .first.cuatro:hover,
-.preview .two .first.cinco:hover {
-    background-color: #1E1E26;
-    font-size: 4em;
-    
-} */
 
 .preview .hover {
     --c: #61ce70a6; /* the color */
@@ -278,10 +250,10 @@ header .btn-contact:hover {
     padding-bottom: 20px;
 }
 
-/* Pros section */
+/* Indicadores section */
 
 .indicadores {
-    padding-top: 115px;
+    padding-top: 20px;
 }
 
 .indicadores .bar {
@@ -314,9 +286,18 @@ header .btn-contact:hover {
 
 .actividades {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #FAFAFA;
-    padding-top: 115px;
+    padding-top: 40px;
+}
+
+.actividades .titulo__seccion {
+    text-align: center;
+    font-size: 4em;
+    color: #097a18;
+    text-shadow: 2px 2px 2px #91ca06;
 }
 
 .actividades .actividades__boxes {
@@ -328,7 +309,6 @@ header .btn-contact:hover {
 }
 
 .actividades .actividades__boxes .actividades__box {
-    /* display: flex; */
     flex-wrap: wrap;
     width: 40%;
     max-width: 530px;
